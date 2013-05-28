@@ -1,4 +1,4 @@
-package practice.practice1.hanoi;
+package practice.practice1.hanoi.no1memory;
 
 import static org.junit.Assert.*;
 
@@ -7,6 +7,10 @@ import java.util.List;
 
 import org.junit.Test;
 
+import practice.practice1.hanoi.Solver;
+import practice.practice1.hanoi.Tower;
+import practice.practice1.hanoi.no1memory.SolverImpl;
+
 /**
  * @author araki
  *
@@ -14,7 +18,7 @@ import org.junit.Test;
 public class SolverImplTest {
 
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
+	 * {@link practice.practice1.hanoi.no1memory.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
 	 * 円盤の数=1、height=1の場合（全ての円盤を移動）
 	 */
 	@Test
@@ -31,7 +35,7 @@ public class SolverImplTest {
 	}
 
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
+	 * {@link practice.practice1.hanoi.no1memory.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
 	 * 円盤の数=3、height=3の場合（全ての円盤を移動）
 	 */
 	@Test
@@ -54,7 +58,7 @@ public class SolverImplTest {
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
+	 * {@link practice.practice1.hanoi.no1memory.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
 	 * 円盤の数=3、height=2の場合（一部の円盤を移動）
 	 */
 	@Test
@@ -73,7 +77,7 @@ public class SolverImplTest {
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
+	 * {@link practice.practice1.hanoi.no1memory.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
 	 * 円盤の数=3、height=0の場合（移動しない）
 	 */
 	@Test
@@ -89,7 +93,7 @@ public class SolverImplTest {
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
+	 * {@link practice.practice1.hanoi.no1memory.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} のためのテスト・メソッド。
 	 * 円盤の数=0、height=1の場合（移動対象の円盤がない）
 	 */
 	@Test

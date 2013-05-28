@@ -1,6 +1,9 @@
-package practice.practice1.hanoi;
+package practice.practice1.hanoi.no1memory;
 
 import java.util.List;
+
+import practice.practice1.hanoi.Solver;
+import practice.practice1.hanoi.Tower;
 
 public class SolverImpl implements Solver {
 
