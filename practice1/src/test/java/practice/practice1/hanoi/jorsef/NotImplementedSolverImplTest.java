@@ -22,7 +22,7 @@ public class NotImplementedSolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 1, new ArrayList<String>());
 		assertEquals(1, result.size());
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
 	}
 
 }

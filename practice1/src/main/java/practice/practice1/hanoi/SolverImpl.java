@@ -4,19 +4,19 @@ import java.util.List;
 
 public class SolverImpl implements Solver {
 
-	/* (”ñ Javadoc)
-	 * solveƒƒ\ƒbƒh‚ÌÀ‘•
+	/* (é Javadoc)
+	 * solveãƒ¡ã‚½ãƒƒãƒ‰ã®å®Ÿè£…
 	 * @see practice.practice1.hanoi.Solver#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)
 	 */
 	@Override
 	public List<String> solve(Tower from, Tower to, Tower work, int height, List<String> result) {
 
-		//from‚ª‹ó‚Å‚Í‚È‚­A‚©‚ÂAheight‚ª0‚æ‚è‘å‚«‚¢A‰~”Õ‚ğˆÚ“®‚·‚é
+		//fromãŒç©ºã§ã¯ãªãã€ã‹ã¤ã€heightãŒ0ã‚ˆã‚Šå¤§ãã„æ™‚ã€å††ç›¤ã‚’ç§»å‹•ã™ã‚‹
 		if (!from.isEmpty() && height > 0) {
 			solve(from, work, to, height - 1, result);
 			Integer val = from.pop();
 			to.push(val);
-			result.add(String.format("%1$s@‚©‚ç %2$s ‚Ö‰~”Õ %3$d ‚ğˆÚ“®", from.getName(), to.getName(), val));
+			result.add(String.format("%1$sã€€ã‹ã‚‰ %2$s ã¸å††ç›¤ %3$d ã‚’ç§»å‹•", from.getName(), to.getName(), val));
 			solve(work, to, from, height - 1, result);
 		}
 		return result;

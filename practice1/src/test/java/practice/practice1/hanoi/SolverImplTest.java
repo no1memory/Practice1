@@ -14,8 +14,8 @@ import org.junit.Test;
 public class SolverImplTest {
 
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ‚Ì‚½‚ß‚ÌƒeƒXƒgEƒƒ\ƒbƒhB
-	 * ‰~”Õ‚Ì”=1Aheight=1‚Ìê‡i‘S‚Ä‚Ì‰~”Õ‚ğˆÚ“®j
+	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * å††ç›¤ã®æ•°=1ã€height=1ã®å ´åˆï¼ˆå…¨ã¦ã®å††ç›¤ã‚’ç§»å‹•ï¼‰
 	 */
 	@Test
 	public void testSolve1() {
@@ -27,12 +27,12 @@ public class SolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 1, new ArrayList<String>());
 		assertEquals(1, result.size());
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
 	}
 
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ‚Ì‚½‚ß‚ÌƒeƒXƒgEƒƒ\ƒbƒhB
-	 * ‰~”Õ‚Ì”=3Aheight=3‚Ìê‡i‘S‚Ä‚Ì‰~”Õ‚ğˆÚ“®j
+	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * å††ç›¤ã®æ•°=3ã€height=3ã®å ´åˆï¼ˆå…¨ã¦ã®å††ç›¤ã‚’ç§»å‹•ï¼‰
 	 */
 	@Test
 	public void testSolve2() {
@@ -44,18 +44,18 @@ public class SolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 3, new ArrayList<String>());
 		assertEquals(7, result.size());
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
-		assertEquals("A@‚©‚ç C ‚Ö‰~”Õ 3 ‚ğˆÚ“®", result.get(1));
-		assertEquals("B@‚©‚ç C ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(2));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 5 ‚ğˆÚ“®", result.get(3));
-		assertEquals("C@‚©‚ç A ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(4));
-		assertEquals("C@‚©‚ç B ‚Ö‰~”Õ 3 ‚ğˆÚ“®", result.get(5));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(6));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ C ã¸å††ç›¤ 3 ã‚’ç§»å‹•", result.get(1));
+		assertEquals("Bã€€ã‹ã‚‰ C ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(2));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 5 ã‚’ç§»å‹•", result.get(3));
+		assertEquals("Cã€€ã‹ã‚‰ A ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(4));
+		assertEquals("Cã€€ã‹ã‚‰ B ã¸å††ç›¤ 3 ã‚’ç§»å‹•", result.get(5));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(6));
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ‚Ì‚½‚ß‚ÌƒeƒXƒgEƒƒ\ƒbƒhB
-	 * ‰~”Õ‚Ì”=3Aheight=2‚Ìê‡iˆê•”‚Ì‰~”Õ‚ğˆÚ“®j
+	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * å††ç›¤ã®æ•°=3ã€height=2ã®å ´åˆï¼ˆä¸€éƒ¨ã®å††ç›¤ã‚’ç§»å‹•ï¼‰
 	 */
 	@Test
 	public void testSolve3() {
@@ -67,14 +67,14 @@ public class SolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 2, new ArrayList<String>());
 		assertEquals(3, result.size());
-		assertEquals("A@‚©‚ç C ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 3 ‚ğˆÚ“®", result.get(1));
-		assertEquals("C@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(2));
+		assertEquals("Aã€€ã‹ã‚‰ C ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 3 ã‚’ç§»å‹•", result.get(1));
+		assertEquals("Cã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(2));
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ‚Ì‚½‚ß‚ÌƒeƒXƒgEƒƒ\ƒbƒhB
-	 * ‰~”Õ‚Ì”=3Aheight=0‚Ìê‡iˆÚ“®‚µ‚È‚¢j
+	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * å††ç›¤ã®æ•°=3ã€height=0ã®å ´åˆï¼ˆç§»å‹•ã—ãªã„ï¼‰
 	 */
 	@Test
 	public void testSolve4() {
@@ -89,8 +89,8 @@ public class SolverImplTest {
 	}
 	
 	/**
-	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ‚Ì‚½‚ß‚ÌƒeƒXƒgEƒƒ\ƒbƒhB
-	 * ‰~”Õ‚Ì”=0Aheight=1‚Ìê‡iˆÚ“®‘ÎÛ‚Ì‰~”Õ‚ª‚È‚¢j
+	 * {@link practice.practice1.hanoi.SolverImpl#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)} ã®ãŸã‚ã®ãƒ†ã‚¹ãƒˆãƒ»ãƒ¡ã‚½ãƒƒãƒ‰ã€‚
+	 * å††ç›¤ã®æ•°=0ã€height=1ã®å ´åˆï¼ˆç§»å‹•å¯¾è±¡ã®å††ç›¤ãŒãªã„ï¼‰
 	 */
 	@Test
 	public void testSolve5() {
