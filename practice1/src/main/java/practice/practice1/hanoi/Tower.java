@@ -43,7 +43,7 @@ public class Tower {
 
 	public void push(Integer value) {
 		if (!isEmpty() && peek() < value)
-			throw new IllegalArgumentException("’¸“_‚É‚ ‚é”Â‚æ‚è‘å‚«‚¢”Â‚ðÏ‚à‚¤‚Æ‚µ‚Ä‚¢‚Ü‚·");
+			throw new IllegalArgumentException("é ‚ç‚¹ã«ã‚ã‚‹æ¿ã‚ˆã‚Šå¤§ãã„æ¿ã‚’ç©ã‚‚ã†ã¨ã—ã¦ã„ã¾ã™");
 		stack.push(value);
 	}
 

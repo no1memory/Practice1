@@ -46,7 +46,7 @@ public class TowerTest {
 			assertNull(val);
 		}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");
 		}
 		tower.push(1);
 		try {
@@ -55,7 +55,7 @@ public class TowerTest {
 			assertEquals(1, val.intValue());
 		}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");
 		}
 	}
 
@@ -64,11 +64,11 @@ public class TowerTest {
 		Tower tower = new Tower("test");
 		try {
 			tower.pop();
-			fail ("発生すべき例外が発生しませんでした");
+			fail ("逋ｺ逕溘☆縺ｹ縺堺ｾ句､悶′逋ｺ逕溘＠縺ｾ縺帙ｓ縺ｧ縺励◆");
 		}
 		catch (NoSuchElementException e) {}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");
 		}
 		tower = new Tower("test", new Integer[] {5});
 		try {
@@ -77,7 +77,7 @@ public class TowerTest {
 			assertEquals(5, val.intValue());
 		}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");
 		}
 	}
 
@@ -88,15 +88,15 @@ public class TowerTest {
 			tower.push(1);
 		}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");		
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");		
 		}
 		try {
 			tower.push(2);
-			fail ("発生すべき例外が発生しませんでした");
+			fail ("逋ｺ逕溘☆縺ｹ縺堺ｾ句､悶′逋ｺ逕溘＠縺ｾ縺帙ｓ縺ｧ縺励◆");
 		}
 		catch (IllegalArgumentException e) {}
 		catch (Exception e) {
-			fail ("予期せぬ例外が発生しました");	
+			fail ("莠域悄縺帙〓萓句､悶′逋ｺ逕溘＠縺ｾ縺励◆");	
 		}
 	}
 
