@@ -23,7 +23,7 @@ public class SolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 1, new ArrayList<String>());
 		assertEquals(1, result.size());
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
 		assertTrue(a.isEmpty());
 		assertFalse(b.isEmpty());
 		assertTrue(c.isEmpty());
@@ -40,9 +40,9 @@ public class SolverImplTest {
 	
 		List<String> result = solver.solve(a, b, c, 2, new ArrayList<String>());
 		assertEquals(3, result.size());
-		assertEquals("A@‚©‚ç C ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 2 ‚ğˆÚ“®", result.get(1));
-		assertEquals("C@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(2));
+		assertEquals("Aã€€ã‹ã‚‰ C ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 2 ã‚’ç§»å‹•", result.get(1));
+		assertEquals("Cã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(2));
 		assertTrue(a.isEmpty());
 		assertFalse(b.isEmpty());
 		assertTrue(c.isEmpty());
@@ -60,13 +60,13 @@ public class SolverImplTest {
 		List<String> result = solver.solve(a, b, c, 3, new ArrayList<String>());
 //		System.out.println(result);
 		assertEquals(7, result.size());
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(0));
-		assertEquals("A@‚©‚ç C ‚Ö‰~”Õ 2 ‚ğˆÚ“®", result.get(1));
-		assertEquals("B@‚©‚ç C ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(2));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 3 ‚ğˆÚ“®", result.get(3));
-		assertEquals("C@‚©‚ç A ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(4));
-		assertEquals("C@‚©‚ç B ‚Ö‰~”Õ 2 ‚ğˆÚ“®", result.get(5));
-		assertEquals("A@‚©‚ç B ‚Ö‰~”Õ 1 ‚ğˆÚ“®", result.get(6));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(0));
+		assertEquals("Aã€€ã‹ã‚‰ C ã¸å††ç›¤ 2 ã‚’ç§»å‹•", result.get(1));
+		assertEquals("Bã€€ã‹ã‚‰ C ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(2));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 3 ã‚’ç§»å‹•", result.get(3));
+		assertEquals("Cã€€ã‹ã‚‰ A ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(4));
+		assertEquals("Cã€€ã‹ã‚‰ B ã¸å††ç›¤ 2 ã‚’ç§»å‹•", result.get(5));
+		assertEquals("Aã€€ã‹ã‚‰ B ã¸å††ç›¤ 1 ã‚’ç§»å‹•", result.get(6));
 		assertTrue(a.isEmpty());
 		assertFalse(b.isEmpty());
 		assertTrue(c.isEmpty());

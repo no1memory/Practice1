@@ -14,7 +14,7 @@ import practice.practice1.hanoi.Tower;
  */
 public class SolverImpl implements Solver {
 
-	/* (”ñ Javadoc)
+	/* (é Javadoc)
 	 * @see practice.practice1.hanoi.Solver#solve(practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, practice.practice1.hanoi.Tower, int, java.util.List)
 	 */
 	@Override
@@ -23,13 +23,13 @@ public class SolverImpl implements Solver {
 		if (height == 1) {
 			Integer val = from.pop();
 			to.push(val);
-			result.add(String.format("%1$s@‚©‚ç %2$s ‚Ö‰~”Õ %3$d ‚ğˆÚ“®", from.getName(), to.getName(), val));
+			result.add(String.format("%1$sã€€ã‹ã‚‰ %2$s ã¸å††ç›¤ %3$d ã‚’ç§»å‹•", from.getName(), to.getName(), val));
 		}
 		else {
 			result = solve(from, work, to, height -1, result);
 			Integer val = from.pop();
 			to.push(val);
-			result.add(String.format("%1$s@‚©‚ç %2$s ‚Ö‰~”Õ %3$d ‚ğˆÚ“®", from.getName(), to.getName(), val));
+			result.add(String.format("%1$sã€€ã‹ã‚‰ %2$s ã¸å††ç›¤ %3$d ã‚’ç§»å‹•", from.getName(), to.getName(), val));
 			result = solve(work, to, from, height -1, result);
 		}
 		return result;
