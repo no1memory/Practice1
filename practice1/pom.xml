@@ -20,7 +20,8 @@
         	<version>2.5</version>
             <configuration>
 	  		    <encoding>UTF-8</encoding>
-  			</configuration>        </plugin>
+  			</configuration>
+  		</plugin>
   	</plugins>
   </build>
   <dependencies>
