@@ -77,8 +77,21 @@ public class SolverImplTest {
 		List<String> result = new ArrayList<String>();
 		result = slv.solve(a, b, c, 4, result);
 		
-//		System.out.println("result num:"+result.size());
-//		System.out.println("result:"+result);
+		assertEquals("A　から C へ円盤 1 を移動", result.get(0));
+		assertEquals("A　から B へ円盤 2 を移動", result.get(1));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(2));
+		assertEquals("A　から C へ円盤 3 を移動", result.get(3));
+		assertEquals("B　から A へ円盤 1 を移動", result.get(4));
+		assertEquals("B　から C へ円盤 2 を移動", result.get(5));
+		assertEquals("A　から C へ円盤 1 を移動", result.get(6));
+		assertEquals("A　から B へ円盤 4 を移動", result.get(7));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(8));
+		assertEquals("C　から A へ円盤 2 を移動", result.get(9));
+		assertEquals("B　から A へ円盤 1 を移動", result.get(10));
+		assertEquals("C　から B へ円盤 3 を移動", result.get(11));
+		assertEquals("A　から C へ円盤 1 を移動", result.get(12));
+		assertEquals("A　から B へ円盤 2 を移動", result.get(13));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(14));
 		
 	}
 

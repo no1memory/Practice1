@@ -72,6 +72,40 @@ public class SolverImplTest {
 	}
 
 	@Test
+	public void testSolve4() {
+		
+		Tower a = new Tower("A", 4);
+		Tower b = new Tower("B");
+		Tower c = new Tower("C");
+		
+		Solver slv = new SolverImpl();
+		
+		List<String> result = new ArrayList<String>();
+		result = slv.solve(a, b, c, 4, result);
+		
+		assertEquals("A　から C へ円盤 1 を移動", result.get(0));
+		assertEquals("A　から B へ円盤 2 を移動", result.get(1));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(2));
+		assertEquals("A　から C へ円盤 3 を移動", result.get(3));
+		assertEquals("B　から A へ円盤 1 を移動", result.get(4));
+		assertEquals("B　から C へ円盤 2 を移動", result.get(5));
+		assertEquals("A　から C へ円盤 1 を移動", result.get(6));
+		assertEquals("A　から B へ円盤 4 を移動", result.get(7));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(8));
+		assertEquals("C　から A へ円盤 2 を移動", result.get(9));
+		assertEquals("B　から A へ円盤 1 を移動", result.get(10));
+		assertEquals("C　から B へ円盤 3 を移動", result.get(11));
+		assertEquals("A　から C へ円盤 1 を移動", result.get(12));
+		assertEquals("A　から B へ円盤 2 を移動", result.get(13));
+		assertEquals("C　から B へ円盤 1 を移動", result.get(14));
+		
+		assertTrue(a.isEmpty());
+		assertFalse(b.isEmpty());
+		assertTrue(c.isEmpty());
+		assertArrayEquals(new Integer[] {1,2,3,4}, b.toArray());
+	}
+
+	@Test
 	public void testSolve5() {
 		int n = 5;
 		int ans = (int) (Math.pow(2, n) - 1);
