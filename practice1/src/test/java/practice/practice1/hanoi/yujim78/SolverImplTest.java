@@ -38,11 +38,6 @@ public class SolverImplTest {
 		List<String> result = new ArrayList<String>();
 		result = slv.solve(a, b, c, 2, result);
 		
-		System.out.println("result num:"+result.size());
-		System.out.println("result:"+result.get(0));
-		System.out.println("result:"+result.get(1));
-		System.out.println("result:"+result.get(2));
-		
 		assertEquals("A　から C へ円盤 1 を移動", result.get(0));
 		assertEquals("A　から B へ円盤 2 を移動", result.get(1));
 		assertEquals("C　から B へ円盤 1 を移動", result.get(2));
@@ -60,15 +55,6 @@ public class SolverImplTest {
 		List<String> result = new ArrayList<String>();
 		result = slv.solve(a, b, c, 3, result);
 		
-		System.out.println("result num:"+result.size());
-		System.out.println("result:"+result);
-//		System.out.println("result:"+result.get(0));
-//		System.out.println("result:"+result.get(1));
-//		System.out.println("result:"+result.get(2));
-//		System.out.println("result:"+result.get(3));
-//		System.out.println("result:"+result.get(4));
-//		System.out.println("result:"+result.get(5));
-//		System.out.println("result:"+result.get(6));
 		
 		assertEquals("A　から B へ円盤 1 を移動", result.get(0));
 		assertEquals("A　から C へ円盤 2 を移動", result.get(1));
@@ -91,16 +77,9 @@ public class SolverImplTest {
 		List<String> result = new ArrayList<String>();
 		result = slv.solve(a, b, c, 4, result);
 		
-		System.out.println("result num:"+result.size());
-		System.out.println("result:"+result);
+//		System.out.println("result num:"+result.size());
+//		System.out.println("result:"+result);
 		
-//		assertEquals("A　から B へ円盤 1 を移動", result.get(0));
-//		assertEquals("A　から C へ円盤 2 を移動", result.get(1));
-//		assertEquals("B　から C へ円盤 1 を移動", result.get(2));
-//		assertEquals("A　から B へ円盤 3 を移動", result.get(3));
-//		assertEquals("C　から A へ円盤 1 を移動", result.get(4));
-//		assertEquals("C　から B へ円盤 2 を移動", result.get(5));
-//		assertEquals("A　から B へ円盤 1 を移動", result.get(6));
 	}
 
 }
