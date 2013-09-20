@@ -2,6 +2,10 @@ package practice.junit.annotation;
 
 import java.util.ArrayList;
 
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -14,13 +18,47 @@ public class ParametersSample {
 	private int _y = 0;
 	private int _z = 0;
 	
+	@BeforeClass
+	public static void BeforeClass() throws Exception {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+	}
+
+	@AfterClass
+	public static void AfterClass() throws Exception {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+	}
+
+	@Before
+	public void Before() throws Exception {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+	}
+
+	@After
+	public void After() throws Exception {
+		System.out.println(Thread.currentThread().getStackTrace()[1].getMethodName());
+	}
+
+	
 	// コンストラクタを作成する。
 	// パラメータを指定するとコンストラクタの引数として渡される。
 	public ParametersSample(int x, int y, int z) {
+		System.out.println("こんすとらくた");
+		
 		_x = x;
 		_y = y + 20;
 		_z += z;
 	}
+
+	//コンストラクタは１つだけ
+//	// コンストラクタを作成する。
+//	// パラメータを指定するとコンストラクタの引数として渡される。
+//	public ParametersSample(long x, long y, long z, String w) {
+//		System.out.println("こんすとらくた 2");
+//		
+//		_x = (int)x;
+//		_y = (int)y + 20;
+//		_z += z;
+//	}
 	
 	// パラメータを指定する
 	// staticでないといけない。
@@ -43,6 +81,17 @@ public class ParametersSample {
 		System.out.println("_z : " + _z);
 		
 		System.out.println("end");
+		System.out.println();
+	}
+	@Test
+	public void test2() {
+		System.out.println("start 2");
+		
+		System.out.println("_x : " + _x);
+		System.out.println("_y : " + _y);
+		System.out.println("_z : " + _z);
+		
+		System.out.println("end 2");
 		System.out.println();
 	}
 /*
